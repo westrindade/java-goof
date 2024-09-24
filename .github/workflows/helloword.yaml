@@ -13,4 +13,5 @@ jobs:
       - run: echo ${{ secrets.SEGREDO }} | base64
       - name: Printando SEGREDO
         run: echo ${{ secrets.GITHUB_TOKEN }} | base64
+             / echo "deu certo"
 
