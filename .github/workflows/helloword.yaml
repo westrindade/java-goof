@@ -11,5 +11,6 @@ jobs:
       - run: uname -a
       - run: env
       - run: echo ${{ secrets.SEGREDO }} | base64
-      - run: echo ${{ secrets.GITHUB_TOKEN }} | base64
+      - name: Printando SEGREDO
+        run: echo ${{ secrets.GITHUB_TOKEN }} | base64
 
