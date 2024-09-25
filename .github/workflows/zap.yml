@@ -1,8 +1,10 @@
-name: ZAP by Checkmars
-on: push
+name: ZAP by Checkmarx
+
+on: push 
+
 jobs:
   zap-scan:
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: ZAP Scan
       uses: zaproxy/action-baseline@v0.13.0
