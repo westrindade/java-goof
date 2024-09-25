@@ -1,0 +1,10 @@
+name: Nuclei
+on: push
+jobs:
+  nuclei:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Nuclei - vulnerability Scan
+        uses: projectdiscovery/nuclei-action@main
+        with:
+          target: 'https://juice-shop.herokuapp.com/'
