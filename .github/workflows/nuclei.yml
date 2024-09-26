@@ -1,5 +1,5 @@
 name: Nuclei
-on: push
+on: workflow_dispatch 
 jobs:
   nuclei:
     runs-on: ubuntu-latest
